@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "d10378d5-738c-4e15-9afe-96213f1898a9",
+		"name": "scraping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30623940"
+	},
+	"item": [
+		{
+			"name": "get by status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/APK/GetApkDetails?statusFilter=1,2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"APK",
+						"GetApkDetails"
+					],
+					"query": [
+						{
+							"key": "statusFilter",
+							"value": "1,2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get unprogressed list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/APK/GetUnProgressedApkDetails?Count=10\n",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"APK",
+						"GetUnProgressedApkDetails"
+					],
+					"query": [
+						{
+							"key": "Count",
+							"value": "10\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllStatusType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/APK/GetAllStatusType",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"APK",
+						"GetAllStatusType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProgressStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ApkId\": 2,\r\n  \"ProgressStatus\": 2,\r\n  \"ErrorMessage\": \"An error occurred.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44354/api/APK/UpdateProgressStatus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"APK",
+						"UpdateProgressStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
