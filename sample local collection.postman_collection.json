@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "c83912bd-5d6d-4fe5-9165-9e1466aa5594",
+		"name": "sample collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30623940"
+	},
+	"item": [
+		{
+			"name": "package names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://preprod-portal-api.quixxi.com/api/application/getpackagenames?appGuid=5bea02be-2bb1-441d-a410-2c6ce69a9957",
+					"protocol": "https",
+					"host": [
+						"preprod-portal-api",
+						"quixxi",
+						"com"
+					],
+					"path": [
+						"api",
+						"application",
+						"getpackagenames"
+					],
+					"query": [
+						{
+							"key": "appGuid",
+							"value": "5bea02be-2bb1-441d-a410-2c6ce69a9957"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login- testoptimize",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", \"Bearer \" + data.access_token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Referer",
+						"value": "https://sta-int-portal.quixxi.com/"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "freeflowtest3@grr.la",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "98xwQvDgj8252zwhg2s4dkstNZwhRMKRwvXWng==",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "369777",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh_token",
+							"value": "805e1780-048b-49a3-8024-9d5e15f514b3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "passwordwrong",
+							"value": "laoSHbm145tBk9cSvLPw1CwmwAgqQ8gXyzYPyg==",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "fK6BFkXgCGZL873g1EnAxzXlLDPloQ6MG9ZMEg==j",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "jeevatest07@grr.la",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://preprod-portal.quixxi.com/token",
+					"protocol": "https",
+					"host": [
+						"preprod-portal",
+						"quixxi",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plans",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "hfYc-q9Lu5E6P-D9HElT0ltMmp2IaXiKvGTekXwhzg74fvREUkp5z518kcxNwXzoLH0M-qnC9y5MhnXe2VunjRid5WJmBk5xy6vYlImUFA8P4RboVUIuzeYQSwKfpdAOC8tZiQs1FoUZPPnjQPFDCI8AoDlyj_27Um3pqmQhd05_eH22sDfmwadm8tnHnep7AaeGg9Ovgg0q7hduNOhRcTTFF-cRP6f3Saibllhty_1OH_FIlknMB53Al3PHrbHGhBL8y5dyuWM1590QxdSZOlcVooAxlSAJXHkQXhkjSuhqstNURdon1JnOW5YwMPTpNqK2NGsFOtBDM5TsnpA_sOarVG_EQTQR9PhSp1ktP7oSWVKcytu3QakNsRbMqwnT879hcpMPY8ti80zSnW_9yXM6OzHgIGpHYzq9FQjhvw1DNMYDlXArVfgQQXFU_SzwVrPjYOi8dW7PdGT5YF-ZuJaymGGUpuFbiOvO03D7Kqrnix_V6vs_rjG2U87KCqnl_0Nc14kbH1G_kJ99chItgnQ64sA68Yi9SiTsknaooymBcawbxQ_CiR-ZszDCnVr1Hg9KxJ-3ONuBJWpOPN4uNA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://preprod-portal-api.quixxi.com/api/v1/plans?package=Security-SAST&appGuid=0a326f1d-b6d4-4da9-9a5b-0e6d054d997b&planType=2&subscriptionType=",
+					"protocol": "https",
+					"host": [
+						"preprod-portal-api",
+						"quixxi",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"plans"
+					],
+					"query": [
+						{
+							"key": "package",
+							"value": "Security-SAST"
+						},
+						{
+							"key": "appGuid",
+							"value": "0a326f1d-b6d4-4da9-9a5b-0e6d054d997b"
+						},
+						{
+							"key": "planType",
+							"value": "2"
+						},
+						{
+							"key": "subscriptionType",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
