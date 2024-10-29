@@ -1,4 +1,6 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="ede05b69-e950-48df-ac39-c3444b5af1e0" activeEnvironment="Default" name="collection_latest_wsdl" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="dc865205-029a-4cb9-bb1a-aceab8adedd2" wsaVersion="NONE" name="BasicHttpBinding_IAuthorService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAuthorService" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/KarthikaDhandapani/Downloads/samples/cookiesample.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\KarthikaDhandapani\Downloads\samples\cookiesample.wsdl"><con:part><con:url>file:\C:\Users\KarthikaDhandapani\Downloads\samples\cookiesample.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" name="IAuthorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
     <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
       <xs:import namespace="http://schemas.datacontract.org/2004/07/CookieSample"/>
       <xs:element name="Addnumbers">
@@ -129,7 +131,7 @@
       <soap:address location="https://localhost:7249/Authorservice.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://localhost:7249/Authorservice.asmx</con:endpoint></con:endpoints><con:operation id="f9970a06-0603-4896-a349-e31c5e31805c" isOneWay="false" action="http://tempuri.org/IAuthorService/Addnumbers" name="Addnumbers" bindingOperationName="Addnumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b342ca7d-daaa-48b1-a0c4-c4001f441e19" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:7249/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:cook="http://schemas.datacontract.org/2004/07/CookieSample">\r
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://localhost:7249/Authorservice.asmx</con:endpoint></con:endpoints><con:operation id="8f84dcca-1149-4542-a459-abc1397d4428" isOneWay="false" action="http://tempuri.org/IAuthorService/Addnumbers" name="Addnumbers" bindingOperationName="Addnumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b264fd46-f221-408c-83b4-ea25360cb827" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://localhost:7249/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:cook="http://schemas.datacontract.org/2004/07/CookieSample">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:Addnumbers>\r
@@ -167,4 +169,45 @@
          </tem:bookdetails>\r
       </tem:Addnumbers>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAuthorService/Addnumbers"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAuthorService/Addnumbers"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="dff54633-31d8-48a3-9222-835ccbde96fd" wsaVersion="NONE" name="WeatherServiceSoapBinding" type="wsdl" bindingName="{http://example.com/weather}WeatherServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/KarthikaDhandapani/Downloads/samples/simpleweather.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Users/KarthikaDhandapani/Downloads/samples/simpleweather.wsdl"><con:part><con:url>file:/C:/Users/KarthikaDhandapani/Downloads/samples/simpleweather.wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="http://example.com/weather" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://example.com/weather">
+  <types>
+    <schema targetNamespace="http://example.com/weather" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="City" type="string"/>
+      <element name="Weather" type="string"/>
+    </schema>
+  </types>
+  <message name="GetWeatherRequest">
+    <part name="City" element="tns:City"/>
+  </message>
+  <message name="GetWeatherResponse">
+    <part name="Weather" element="tns:Weather"/>
+  </message>
+  <portType name="WeatherServicePortType">
+    <operation name="GetWeather">
+      <input message="tns:GetWeatherRequest"/>
+      <output message="tns:GetWeatherResponse"/>
+    </operation>
+  </portType>
+  <binding name="WeatherServiceSoapBinding" type="tns:WeatherServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="GetWeather">
+      <soap:operation soapAction="http://example.com/weather/GetWeather"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WeatherService">
+    <port name="WeatherServicePort" binding="tns:WeatherServiceSoapBinding">
+      <soap:address location="http://example.com/weather/service"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://example.com/weather/service</con:endpoint></con:endpoints><con:operation id="8b77050e-9fc1-4d09-b187-4bcea1080227" isOneWay="false" action="http://example.com/weather/GetWeather" name="GetWeather" bindingOperationName="GetWeather" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="702c0fb9-00e2-415e-bb3f-2943ca7028ca" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://example.com/weather/service</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:weat="http://example.com/weather">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <weat:City>?</weat:City>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://example.com/weather/GetWeather"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
