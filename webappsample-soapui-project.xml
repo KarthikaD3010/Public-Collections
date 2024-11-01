@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="0c1b1e3f-68ba-4274-b5f0-c9b4e7c61453" activeEnvironment="Default" name="webappsample" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="dd8190cf-9969-4a4a-b30a-31976b23e784" wsaVersion="NONE" name="BasicHttpBinding_IAuthorService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAuthorService" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/KarthikaDhandapani/Downloads/samples/webappsample.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\KarthikaDhandapani\Downloads\samples\webappsample.wsdl"><con:part><con:url>file:\C:\Users\KarthikaDhandapani\Downloads\samples\webappsample.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" name="IAuthorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<con:soapui-project id="a4a04990-bd66-4367-94ec-11466b3df33a" activeEnvironment="Default" name="webappsample" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="8316073e-ead7-41ba-8ef4-606fa56a0832" wsaVersion="NONE" name="BasicHttpBinding_IAuthorService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAuthorService" soapVersion="1_1" anonymous="optional" definition="https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/refs/heads/main/webappsample.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/refs/heads/main/webappsample.wsdl"><con:part><con:url>https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/refs/heads/main/webappsample.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" name="IAuthorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
       <xs:import namespace="http://schemas.datacontract.org/2004/07/CookieSample"/>
@@ -131,41 +131,41 @@
       <soap:address location="https://wsdlsample.quixxi.com/Authorservice.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://wsdlsample.quixxi.com/Authorservice.asmx</con:endpoint></con:endpoints><con:operation id="b5e7daf0-58cb-4bea-a929-38f1dd4cc112" isOneWay="false" action="http://tempuri.org/IAuthorService/Addnumbers" name="Addnumbers" bindingOperationName="Addnumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7b7bc0d7-a5da-465c-8eee-57cc9dee88d1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://wsdlsample.quixxi.com/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:cook="http://schemas.datacontract.org/2004/07/CookieSample">\r
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://wsdlsample.quixxi.com/Authorservice.asmx</con:endpoint></con:endpoints><con:operation id="c84b81a9-78c7-4d5c-9ccf-40959f8a7675" isOneWay="false" action="http://tempuri.org/IAuthorService/Addnumbers" name="Addnumbers" bindingOperationName="Addnumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="79c92477-786a-4475-98c9-48f185e92e6a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://wsdlsample.quixxi.com/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:cook="http://schemas.datacontract.org/2004/07/CookieSample">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:Addnumbers>\r
-         <tem:a>435</tem:a>\r
-         <tem:b>234</tem:b>\r
+         <tem:a>?</tem:a>\r
+         <tem:b>?</tem:b>\r
          <tem:author>\r
             <!--Optional:-->\r
             <cook:Address>\r
                <!--Optional:-->\r
-               <cook:city>gdfsgs</cook:city>\r
+               <cook:city>?</cook:city>\r
                <!--Optional:-->\r
-               <cook:state>dsgdfg</cook:state>\r
+               <cook:state>?</cook:state>\r
                <!--Optional:-->\r
                <cook:streetdetails>\r
                   <!--Optional:-->\r
-                  <cook:Doorno>345</cook:Doorno>\r
+                  <cook:Doorno>?</cook:Doorno>\r
                   <!--Optional:-->\r
-                  <cook:Streetname>dfgsdfg</cook:Streetname>\r
+                  <cook:Streetname>?</cook:Streetname>\r
                </cook:streetdetails>\r
             </cook:Address>\r
             <!--Optional:-->\r
-            <cook:FirstName>sdgsfg</cook:FirstName>\r
+            <cook:FirstName>?</cook:FirstName>\r
             <!--Optional:-->\r
-            <cook:Id>5</cook:Id>\r
+            <cook:Id>?</cook:Id>\r
             <!--Optional:-->\r
-            <cook:LastName>fdhggh</cook:LastName>\r
+            <cook:LastName>?</cook:LastName>\r
             <!--Optional:-->\r
-            <cook:Phonenumber>3543543543</cook:Phonenumber>\r
+            <cook:Phonenumber>?</cook:Phonenumber>\r
          </tem:author>\r
          <tem:bookdetails>\r
             <!--Optional:-->\r
-            <cook:Bookname>dsfgdfsg</cook:Bookname>\r
+            <cook:Bookname>?</cook:Bookname>\r
             <!--Optional:-->\r
-            <cook:Bookprice>45435</cook:Bookprice>\r
+            <cook:Bookprice>?</cook:Bookprice>\r
          </tem:bookdetails>\r
       </tem:Addnumbers>\r
    </soapenv:Body>\r
