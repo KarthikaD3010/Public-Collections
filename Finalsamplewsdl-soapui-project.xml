@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5765150e-e47d-49dd-8c81-9dc1575af0ab" activeEnvironment="Default" name="Finalsamplewsdl" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5b6891a7-7510-45e5-ba2b-04d368178575" wsaVersion="NONE" name="BasicHttpBinding_IAuthorService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAuthorService" soapVersion="1_1" anonymous="optional" definition="https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/main/Finalsamplewsdl.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/main/Finalsamplewsdl.wsdl"><con:part><con:url>https://raw.githubusercontent.com/KarthikaD3010/Public-Collections/main/Finalsamplewsdl.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" name="IAuthorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+      <xs:element name="GetMethod">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMethodResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="GetMethodResult" nillable="true" type="q1:Author" xmlns:q1="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddItem">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="author" nillable="true" type="q2:Author" xmlns:q2="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+            <xs:element minOccurs="1" name="exampleclass" nillable="true" type="q3:exampleclass" xmlns:q3="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddItemResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="AddItemResult" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Addnumbers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="a" type="xs:int"/>
+            <xs:element minOccurs="1" name="b" type="xs:int"/>
+            <xs:element minOccurs="1" name="author" nillable="true" type="q4:Author" xmlns:q4="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+            <xs:element minOccurs="1" name="bookdetails" nillable="true" type="q5:Bookdetails" xmlns:q5="http://schemas.datacontract.org/2004/07/SampleWSDLApp"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddnumbersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="AddnumbersResult" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+      <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+      <xs:element name="byte" nillable="true" type="xs:byte"/>
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+      <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+      <xs:element name="double" nillable="true" type="xs:double"/>
+      <xs:element name="float" nillable="true" type="xs:float"/>
+      <xs:element name="int" nillable="true" type="xs:int"/>
+      <xs:element name="long" nillable="true" type="xs:long"/>
+      <xs:element name="QName" nillable="true" type="xs:QName"/>
+      <xs:element name="short" nillable="true" type="xs:short"/>
+      <xs:element name="string" nillable="true" type="xs:string"/>
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+      <xs:element name="char" nillable="true" type="tns:char"/>
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration"/>
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid"/>
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName"/>
+      <xs:attribute name="Id" type="xs:ID"/>
+      <xs:attribute name="Ref" type="xs:IDREF"/>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SampleWSDLApp" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/SampleWSDLApp" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/System"/>
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <xs:complexType name="Author">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="tns:Address"/>
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Id" type="xs:int"/>
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Phonenumber" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Author" nillable="true" type="tns:Author"/>
+      <xs:complexType name="Address">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="city" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="state" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="streetdetails" nillable="true" type="tns:Streetdetails"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Address" nillable="true" type="tns:Address"/>
+      <xs:complexType name="Streetdetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Doorno" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Streetname" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Streetdetails" nillable="true" type="tns:Streetdetails"/>
+      <xs:complexType name="exampleclass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Age" type="xs:int"/>
+          <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="DateOfJoining" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="GPA" type="xs:double"/>
+          <xs:element minOccurs="0" name="Height" type="xs:short"/>
+          <xs:element minOccurs="0" name="HexBinaryData" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NCName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="NegativeInteger" type="xs:int"/>
+          <xs:element minOccurs="0" name="NonNegativeInteger" type="xs:int"/>
+          <xs:element minOccurs="0" name="NonPositiveInteger" type="xs:int"/>
+          <xs:element minOccurs="0" name="PhoneNumber" type="xs:long"/>
+          <xs:element minOccurs="0" name="PositiveInteger" type="xs:int"/>
+          <xs:element minOccurs="0" name="Salary" type="xs:decimal"/>
+          <xs:element minOccurs="0" name="SignedByte" type="xs:byte"/>
+          <xs:element minOccurs="0" name="UnsignedByte" type="xs:byte"/>
+          <xs:element minOccurs="0" name="UnsignedInt" type="xs:unsignedInt"/>
+          <xs:element minOccurs="0" name="UnsignedLong" type="xs:unsignedLong"/>
+          <xs:element minOccurs="0" name="UnsignedShort" type="xs:unsignedShort"/>
+          <xs:element minOccurs="0" name="Website" type="xs:anyURI"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="exampleclass" nillable="true" type="tns:exampleclass"/>
+      <xs:complexType name="Bookdetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bookname" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Bookprice" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Bookdetails" nillable="true" type="tns:Bookdetails"/>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IAuthorService_GetMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMethod"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorService_GetMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMethodResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorService_AddItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddItem"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorService_AddItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddItemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorService_Addnumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:Addnumbers"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorService_Addnumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddnumbersResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IAuthorService">
+    <wsdl:operation name="GetMethod">
+      <wsdl:input wsam:Action="http://tempuri.org/IAuthorService/GetMethod" message="tns:IAuthorService_GetMethod_InputMessage"/>
+      <wsdl:output wsam:Action="http://tempuri.org/IAuthorService/GetMethodResponse" message="tns:IAuthorService_GetMethod_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <wsdl:input wsam:Action="http://tempuri.org/IAuthorService/AddItem" message="tns:IAuthorService_AddItem_InputMessage"/>
+      <wsdl:output wsam:Action="http://tempuri.org/IAuthorService/AddItemResponse" message="tns:IAuthorService_AddItem_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="Addnumbers">
+      <wsdl:input wsam:Action="http://tempuri.org/IAuthorService/Addnumbers" message="tns:IAuthorService_Addnumbers_InputMessage"/>
+      <wsdl:output wsam:Action="http://tempuri.org/IAuthorService/AddnumbersResponse" message="tns:IAuthorService_Addnumbers_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAuthorService" type="tns:IAuthorService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetMethod">
+      <soap:operation soapAction="http://tempuri.org/IAuthorService/GetMethod" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <soap:operation soapAction="http://tempuri.org/IAuthorService/AddItem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Addnumbers">
+      <soap:operation soapAction="http://tempuri.org/IAuthorService/Addnumbers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IAuthorService">
+    <wsdl:port name="BasicHttpBinding_IAuthorService" binding="tns:BasicHttpBinding_IAuthorService">
+      <soap:address location="http://localhost:5270/Authorservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:5270/Authorservice.asmx</con:endpoint></con:endpoints><con:operation id="3a5e5de8-03bb-4d5f-b37d-3dfb8f0df295" isOneWay="false" action="http://tempuri.org/IAuthorService/AddItem" name="AddItem" bindingOperationName="AddItem" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eb484161-713f-46b8-b1cc-a2f90c3940ae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:5270/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sam="http://schemas.datacontract.org/2004/07/SampleWSDLApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddItem>\r
+         <tem:author>\r
+            <!--Optional:-->\r
+            <sam:Address>\r
+               <!--Optional:-->\r
+               <sam:city>?</sam:city>\r
+               <!--Optional:-->\r
+               <sam:state>?</sam:state>\r
+               <!--Optional:-->\r
+               <sam:streetdetails>\r
+                  <!--Optional:-->\r
+                  <sam:Doorno>?</sam:Doorno>\r
+                  <!--Optional:-->\r
+                  <sam:Streetname>?</sam:Streetname>\r
+               </sam:streetdetails>\r
+            </sam:Address>\r
+            <!--Optional:-->\r
+            <sam:FirstName>?</sam:FirstName>\r
+            <!--Optional:-->\r
+            <sam:Id>?</sam:Id>\r
+            <!--Optional:-->\r
+            <sam:LastName>?</sam:LastName>\r
+            <!--Optional:-->\r
+            <sam:Phonenumber>?</sam:Phonenumber>\r
+         </tem:author>\r
+         <tem:exampleclass>\r
+            <!--Optional:-->\r
+            <sam:Age>?</sam:Age>\r
+            <!--Optional:-->\r
+            <sam:DateOfBirth>?</sam:DateOfBirth>\r
+            <!--Optional:-->\r
+            <sam:DateOfJoining>?</sam:DateOfJoining>\r
+            <!--Optional:-->\r
+            <sam:FirstName>?</sam:FirstName>\r
+            <!--Optional:-->\r
+            <sam:GPA>?</sam:GPA>\r
+            <!--Optional:-->\r
+            <sam:Height>?</sam:Height>\r
+            <!--Optional:-->\r
+            <sam:HexBinaryData>?</sam:HexBinaryData>\r
+            <!--Optional:-->\r
+            <sam:IsActive>?</sam:IsActive>\r
+            <!--Optional:-->\r
+            <sam:Language>?</sam:Language>\r
+            <!--Optional:-->\r
+            <sam:LastName>?</sam:LastName>\r
+            <!--Optional:-->\r
+            <sam:NCName>?</sam:NCName>\r
+            <!--Optional:-->\r
+            <sam:Name>?</sam:Name>\r
+            <!--Optional:-->\r
+            <sam:NegativeInteger>?</sam:NegativeInteger>\r
+            <!--Optional:-->\r
+            <sam:NonNegativeInteger>?</sam:NonNegativeInteger>\r
+            <!--Optional:-->\r
+            <sam:NonPositiveInteger>?</sam:NonPositiveInteger>\r
+            <!--Optional:-->\r
+            <sam:PhoneNumber>?</sam:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sam:PositiveInteger>?</sam:PositiveInteger>\r
+            <!--Optional:-->\r
+            <sam:Salary>?</sam:Salary>\r
+            <!--Optional:-->\r
+            <sam:SignedByte>?</sam:SignedByte>\r
+            <!--Optional:-->\r
+            <sam:UnsignedByte>?</sam:UnsignedByte>\r
+            <!--Optional:-->\r
+            <sam:UnsignedInt>?</sam:UnsignedInt>\r
+            <!--Optional:-->\r
+            <sam:UnsignedLong>?</sam:UnsignedLong>\r
+            <!--Optional:-->\r
+            <sam:UnsignedShort>?</sam:UnsignedShort>\r
+            <!--Optional:-->\r
+            <sam:Website>?</sam:Website>\r
+         </tem:exampleclass>\r
+      </tem:AddItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAuthorService/AddItem"/></con:call></con:operation><con:operation id="a09934d4-349a-4b14-861e-f83854bf9228" isOneWay="false" action="http://tempuri.org/IAuthorService/Addnumbers" name="Addnumbers" bindingOperationName="Addnumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="de1d4f5f-e4ee-44d1-961c-f33522da05c6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:5270/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sam="http://schemas.datacontract.org/2004/07/SampleWSDLApp">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Addnumbers>\r
+         <tem:a>?</tem:a>\r
+         <tem:b>?</tem:b>\r
+         <tem:author>\r
+            <!--Optional:-->\r
+            <sam:Address>\r
+               <!--Optional:-->\r
+               <sam:city>?</sam:city>\r
+               <!--Optional:-->\r
+               <sam:state>?</sam:state>\r
+               <!--Optional:-->\r
+               <sam:streetdetails>\r
+                  <!--Optional:-->\r
+                  <sam:Doorno>?</sam:Doorno>\r
+                  <!--Optional:-->\r
+                  <sam:Streetname>?</sam:Streetname>\r
+               </sam:streetdetails>\r
+            </sam:Address>\r
+            <!--Optional:-->\r
+            <sam:FirstName>?</sam:FirstName>\r
+            <!--Optional:-->\r
+            <sam:Id>?</sam:Id>\r
+            <!--Optional:-->\r
+            <sam:LastName>?</sam:LastName>\r
+            <!--Optional:-->\r
+            <sam:Phonenumber>?</sam:Phonenumber>\r
+         </tem:author>\r
+         <tem:bookdetails>\r
+            <!--Optional:-->\r
+            <sam:Bookname>?</sam:Bookname>\r
+            <!--Optional:-->\r
+            <sam:Bookprice>?</sam:Bookprice>\r
+         </tem:bookdetails>\r
+      </tem:Addnumbers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAuthorService/Addnumbers"/></con:call></con:operation><con:operation id="765d23a3-bad1-4a48-bad0-ad9d76c20c46" isOneWay="false" action="http://tempuri.org/IAuthorService/GetMethod" name="GetMethod" bindingOperationName="GetMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2895d211-9606-4cc2-97e5-650a8c2a72f8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:5270/Authorservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetMethod/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAuthorService/GetMethod"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
